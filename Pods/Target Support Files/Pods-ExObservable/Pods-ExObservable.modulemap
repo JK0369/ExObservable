@@ -1,0 +1,6 @@
+framework module Pods_ExObservable {
+  umbrella header "Pods-ExObservable-umbrella.h"
+
+  export *
+  module * { export * }
+}

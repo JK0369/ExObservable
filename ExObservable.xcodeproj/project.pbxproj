@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7D60B42EB041F4F7276EBD /* Pods_ExObservable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EA633538344352FE438A7C /* Pods_ExObservable.framework */; };
 		C6122B4027B2359A00D8FE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6122B3F27B2359A00D8FE34 /* AppDelegate.swift */; };
 		C6122B4227B2359A00D8FE34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6122B4127B2359A00D8FE34 /* SceneDelegate.swift */; };
 		C6122B4427B2359A00D8FE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6122B4327B2359A00D8FE34 /* ViewController.swift */; };
 		C6122B4727B2359A00D8FE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6122B4527B2359A00D8FE34 /* Main.storyboard */; };
 		C6122B4927B2359C00D8FE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6122B4827B2359C00D8FE34 /* Assets.xcassets */; };
 		C6122B4C27B2359C00D8FE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6122B4A27B2359C00D8FE34 /* LaunchScreen.storyboard */; };
+		C6122B5427B2394E00D8FE34 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6122B5327B2394E00D8FE34 /* UIApplication+Extension.swift */; };
+		C6122B5627B2397000D8FE34 /* MyPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6122B5527B2397000D8FE34 /* MyPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33EA633538344352FE438A7C /* Pods_ExObservable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExObservable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E235847AD63FF2D4118BC9 /* Pods-ExObservable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExObservable.debug.xcconfig"; path = "Target Support Files/Pods-ExObservable/Pods-ExObservable.debug.xcconfig"; sourceTree = "<group>"; };
+		814DA33B57BE5B9B44BC6EE2 /* Pods-ExObservable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExObservable.release.xcconfig"; path = "Target Support Files/Pods-ExObservable/Pods-ExObservable.release.xcconfig"; sourceTree = "<group>"; };
 		C6122B3C27B2359A00D8FE34 /* ExObservable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExObservable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6122B3F27B2359A00D8FE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6122B4127B2359A00D8FE34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		C6122B4827B2359C00D8FE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6122B4B27B2359C00D8FE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6122B4D27B2359C00D8FE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6122B5327B2394E00D8FE34 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		C6122B5527B2397000D8FE34 /* MyPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7D60B42EB041F4F7276EBD /* Pods_ExObservable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B4898B5A6C51BBF7C8140F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45E235847AD63FF2D4118BC9 /* Pods-ExObservable.debug.xcconfig */,
+				814DA33B57BE5B9B44BC6EE2 /* Pods-ExObservable.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6122B3327B2359A00D8FE34 = {
 			isa = PBXGroup;
 			children = (
 				C6122B3E27B2359A00D8FE34 /* ExObservable */,
 				C6122B3D27B2359A00D8FE34 /* Products */,
+				4B4898B5A6C51BBF7C8140F1 /* Pods */,
+				FEF87CA9038805A6152419E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +80,22 @@
 				C6122B3F27B2359A00D8FE34 /* AppDelegate.swift */,
 				C6122B4127B2359A00D8FE34 /* SceneDelegate.swift */,
 				C6122B4327B2359A00D8FE34 /* ViewController.swift */,
+				C6122B5527B2397000D8FE34 /* MyPopup.swift */,
+				C6122B5327B2394E00D8FE34 /* UIApplication+Extension.swift */,
 				C6122B4527B2359A00D8FE34 /* Main.storyboard */,
 				C6122B4827B2359C00D8FE34 /* Assets.xcassets */,
 				C6122B4A27B2359C00D8FE34 /* LaunchScreen.storyboard */,
 				C6122B4D27B2359C00D8FE34 /* Info.plist */,
 			);
 			path = ExObservable;
+			sourceTree = "<group>";
+		};
+		FEF87CA9038805A6152419E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33EA633538344352FE438A7C /* Pods_ExObservable.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6122B5027B2359C00D8FE34 /* Build configuration list for PBXNativeTarget "ExObservable" */;
 			buildPhases = (
+				85131AC1A9B5BD90F9736467 /* [CP] Check Pods Manifest.lock */,
 				C6122B3827B2359A00D8FE34 /* Sources */,
 				C6122B3927B2359A00D8FE34 /* Frameworks */,
 				C6122B3A27B2359A00D8FE34 /* Resources */,
+				44D972634188A5BC4A750F2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +166,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44D972634188A5BC4A750F2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExObservable/Pods-ExObservable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExObservable/Pods-ExObservable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExObservable/Pods-ExObservable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85131AC1A9B5BD90F9736467 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExObservable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6122B3827B2359A00D8FE34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C6122B4427B2359A00D8FE34 /* ViewController.swift in Sources */,
+				C6122B5627B2397000D8FE34 /* MyPopup.swift in Sources */,
 				C6122B4027B2359A00D8FE34 /* AppDelegate.swift in Sources */,
+				C6122B5427B2394E00D8FE34 /* UIApplication+Extension.swift in Sources */,
 				C6122B4227B2359A00D8FE34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +361,7 @@
 		};
 		C6122B5127B2359C00D8FE34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E235847AD63FF2D4118BC9 /* Pods-ExObservable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +390,7 @@
 		};
 		C6122B5227B2359C00D8FE34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814DA33B57BE5B9B44BC6EE2 /* Pods-ExObservable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
