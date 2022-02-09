@@ -16,22 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vk-Pc-3AP">
-                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-xf-Vq1">
+                                <rect key="frame" x="164.5" y="68" width="85" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="StartTask"/>
                                 <connections>
-                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="127-jG-9lC"/>
+                                    <action selector="didTapStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iEr-zv-uSY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-JW-mbJ">
+                                <rect key="frame" x="158" y="144" width="98" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CancelTask"/>
+                                <connections>
+                                    <action selector="didTapCancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFG-yH-VD6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Vk-Pc-3AP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3uU-NP-gkK"/>
-                            <constraint firstItem="6Vk-Pc-3AP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96y-dO-SAn"/>
+                            <constraint firstItem="nrn-xf-Vq1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GEJ-tg-F3s"/>
+                            <constraint firstItem="eqg-JW-mbJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="sk6-U4-5dU"/>
+                            <constraint firstItem="eqg-JW-mbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgh-9B-ZV7"/>
+                            <constraint firstItem="nrn-xf-Vq1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="yeI-xx-WyI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="eqg-JW-mbJ" id="a6G-qI-Rl1"/>
+                        <outlet property="startButton" destination="nrn-xf-Vq1" id="tSX-ie-8aV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

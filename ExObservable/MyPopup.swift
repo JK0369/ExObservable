@@ -11,25 +11,25 @@ import RxCocoa
 
 protocol MyPopupType {
   static func startTask()
-  static func stopTask()
+  static func cancelTask()
 }
 
 class MyPopup: MyPopupType {
   static private var disposeBag = DisposeBag()
-  static private var countDown = 5
+  static private var countDown = 3
   
   static func startTask() {
-    self.disposeBag = DisposeBag()
-    self.countDown = 5
+    Self.cancelTask()
     
     let sampleLabel = UILabel()
     sampleLabel.backgroundColor = .systemOrange
     sampleLabel.textColor = .white
-    sampleLabel.layer.cornerRadius = 10
-    
+    sampleLabel.font = .systemFont(ofSize: 32)
+    sampleLabel.textAlignment = .center
+
     guard let superview = UIApplication.topViewController?.view else { return }
     superview.addSubview(sampleLabel)
-    
+
     sampleLabel.translatesAutoresizingMaskIntoConstraints = false
     sampleLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
     sampleLabel.heightAnchor.constraint(equalToConstant: 300).isActive = true
@@ -52,10 +52,10 @@ class MyPopup: MyPopupType {
         return Disposables.create { sampleLabel?.removeFromSuperview() }
       }
       .subscribe()
-      .disposed(by: self.disposeBag)
+      .disposed(by: Self.disposeBag)
   }
   
-  static func stopTask() {
-    self.disposeBag = DisposeBag()
+  static func cancelTask() {
+    Self.disposeBag = DisposeBag()
   }
 }

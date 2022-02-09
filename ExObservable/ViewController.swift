@@ -8,11 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+  @IBOutlet weak var startButton: UIButton!
+  @IBOutlet weak var cancelButton: UIButton!
   override func viewDidLoad() {
     super.viewDidLoad()
-    
   }
-  @IBAction func didTapButton(_ sender: Any) {
+  @IBAction func didTapStartButton(_ sender: Any) {
     MyPopup.startTask()
+  }
+  @IBAction func didTapCancelButton(_ sender: Any) {
+    MyPopup.cancelTask()
   }
 }
